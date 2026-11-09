@@ -1,0 +1,18 @@
+{
+  "pass": "dramaturgy",
+  "verdict": "PASS",
+  "summary": "A visual beat turns a secret into a decision.",
+  "evidence": [
+    "storyspec/changes/opening/proposal.md"
+  ],
+  "findings": [],
+  "waivers": [],
+  "requirementAssessments": [
+    {
+      "domain": "plot",
+      "requirement": "costly-choice",
+      "verdict": "SATISFIED",
+      "rationale": "A visual beat turns a secret into a decision."
+    }
+  ]
+}

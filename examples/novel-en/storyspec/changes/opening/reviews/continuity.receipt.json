@@ -1,0 +1,17 @@
+{
+  "pass": "continuity",
+  "author": "Example Reviewer",
+  "at": "2026-11-09T14:02:17.142Z",
+  "hash": "0e6f1e24def68dc79f11384027f10a60430a8905406a5355cd095f1ec3dfe061",
+  "change": "opening",
+  "type": "chapter",
+  "inputs": {
+    "report": "ad668930aa4fa05770b30a05204b7e4fb84b66698fcb1807a5176df6e0c40dd9",
+    "evidence": {
+      "storyspec/changes/opening/proposal.md": "41671a53d2dd1c4dbd79daa37ed30b2528a7253309e61c55e82280657c9f063b"
+    }
+  },
+  "snapshots": {
+    "storyspec/changes/opening/proposal.md": "storyspec/changes/opening/evidence/sha256/41671a53d2dd1c4dbd79daa37ed30b2528a7253309e61c55e82280657c9f063b"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "profile": "novel",
+  "artifacts": [
+    {
+      "id": "proposal",
+      "requires": []
+    },
+    {
+      "id": "specs",
+      "requires": [
+        "proposal"
+      ]
+    },
+    {
+      "id": "design",
+      "requires": [
+        "proposal"
+      ]
+    },
+    {
+      "id": "tasks",
+      "requires": [
+        "specs",
+        "design"
+      ]
+    },
+    {
+      "id": "map",
+      "requires": [
+        "specs"
+      ]
+    },
+    {
+      "id": "manuscript",
+      "requires": [
+        "design",
+        "specs"
+      ],
+      "types": [
+        "chapter",
+        "revision"
+      ]
+    },
+    {
+      "id": "verification",
+      "requires": [
+        "map",
+        "manuscript"
+      ]
+    },
+    {
+      "id": "dramaturgy",
+      "requires": [
+        "verification"
+      ]
+    },
+    {
+      "id": "continuity",
+      "requires": [
+        "verification"
+      ]
+    },
+    {
+      "id": "prose",
+      "requires": [
+        "verification"
+      ],
+      "types": [
+        "chapter",
+        "revision"
+      ]
+    },
+    {
+      "id": "final",
+      "requires": [
+        "tasks",
+        "dramaturgy",
+        "continuity",
+        "prose"
+      ]
+    },
+    {
+      "id": "apply",
+      "requires": [
+        "final"
+      ]
+    },
+    {
+      "id": "archive",
+      "requires": [
+        "apply"
+      ]
+    }
+  ]
+}

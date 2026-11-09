@@ -1,0 +1,35 @@
+name: Author workflow feedback
+description: Report a difficulty completing a StorySpec change with fictional or redacted material
+title: "Author feedback: "
+labels: [author-feedback]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include unpublished manuscripts, personal data, or credentials. See docs/author-feedback.md."
+  - type: dropdown
+    id: language
+    attributes:
+      label: Project language
+      options: [en, pt-BR]
+    validations:
+      required: true
+  - type: dropdown
+    id: profile
+    attributes:
+      label: Profile
+      options: [novel, light-novel, generic]
+    validations:
+      required: true
+  - type: textarea
+    id: step
+    attributes:
+      label: First unclear or failing step
+      description: Give the command and redacted error or issue ID.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected guidance
+    validations:
+      required: true

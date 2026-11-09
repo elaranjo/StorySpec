@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "scenes": [
+    {
+      "id": "choice",
+      "narrativeOrder": 1,
+      "storyAfter": [],
+      "causedBy": [],
+      "originReason": "A travessia produz uma perda visível.",
+      "stateChanges": [],
+      "knowledgeChanges": [],
+      "key": "opening/choice",
+      "origin": "opening"
+    }
+  ]
+}

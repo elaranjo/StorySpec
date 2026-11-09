@@ -1,0 +1,18 @@
+{
+  "pass": "dramaturgy",
+  "verdict": "PASS",
+  "summary": "Um momento visual transforma um segredo em decisão.",
+  "evidence": [
+    "storyspec/changes/opening/proposal.md"
+  ],
+  "findings": [],
+  "waivers": [],
+  "requirementAssessments": [
+    {
+      "domain": "plot",
+      "requirement": "costly-choice",
+      "verdict": "SATISFIED",
+      "rationale": "Um momento visual transforma um segredo em decisão."
+    }
+  ]
+}

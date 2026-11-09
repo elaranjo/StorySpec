@@ -1,0 +1,52 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { mkdtempSync, mkdirSync, rmSync, existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join, resolve } from 'node:path';
+import { spawnSync } from 'node:child_process';
+
+test('local tarball installs and starts an independent project offline', t => {
+  const temp = mkdtempSync(join(tmpdir(), 'storyspec-package-'));
+  t.after(() => rmSync(temp, { recursive: true, force: true }));
+  const repo = resolve('.');
+  const version = JSON.parse(readFileSync(join(repo, 'package.json'), 'utf8')).version;
+  const packed = spawnSync('npm', ['pack', '--silent', '--pack-destination', temp], { cwd: repo, encoding: 'utf8' });
+  assert.equal(packed.status, 0, packed.stderr);
+  const tarball = join(temp, packed.stdout.trim());
+  assert.ok(existsSync(tarball));
+  const prefix = join(temp, 'install');
+  const installed = spawnSync('npm', ['install', '--silent', '--offline', '--ignore-scripts', '--no-audit', '--no-fund', '--prefix', prefix, tarball], { cwd: temp, encoding: 'utf8' });
+  assert.equal(installed.status, 0, installed.stderr);
+  const cli = join(prefix, 'node_modules', 'storyspec', 'bin', 'storyspec.js');
+  const project = join(temp, 'my-project');
+  mkdirSync(project);
+  const run = (...args) => spawnSync(process.execPath, [cli, ...args], { cwd: project, encoding: 'utf8' });
+  const ok = (...args) => { const result = run(...args); assert.equal(result.status, 0, result.stderr); return result; };
+  const document = ref => join(project, ref);
+  const read = ref => readFileSync(document(ref), 'utf8');
+  const put = (ref, body) => writeFileSync(document(ref), body);
+  assert.equal(run('--version').stdout.trim(), version);
+  ok('init', 'Packaged story', '--lang', 'en');
+  ok('new', 'change', 'opening-rule', '--type', 'world');
+  ok('new', 'delta', 'opening-rule', 'world');
+  assert.ok(existsSync(join(project, 'storyspec', 'changes', 'opening-rule', 'specs', 'world', 'spec.md')));
+  const dir = 'storyspec/changes/opening-rule/';
+  put(dir + 'proposal.md', read(dir + 'proposal.md').replaceAll('<fill in>', 'Establish the story rule.'));
+  put(dir + 'design.md', read(dir + 'design.md').replaceAll('<fill in>', 'Reveal the rule through a choice.'));
+  put(dir + 'specs/world/spec.md', '# Delta: world\n\n## ADDED\n\n### Requirement: visible-cost\nScope: series\nStatus: PLANNED\nStatement: A choice has a visible cost.\nVerification: Inspect the consequence scene.\nSources:\nClaims:\n\n## MODIFIED\n\n## REMOVED\n');
+  put(dir + 'narrative-map.json', JSON.stringify({ version: 1, scenes: [], coverage: [{ domain: 'world', requirement: 'visible-cost', status: 'deferred', defer: { target: 'volume-two', reason: 'World rule precedes manuscript.' } }], waivers: [] }));
+  ok('approve', 'opening-rule', 'plan', '--author', 'Writer');
+  put(dir + 'tasks.md', read(dir + 'tasks.md').replaceAll('- [ ]', '- [x]'));
+  for (const pass of ['dramaturgy', 'continuity']) {
+    ok('review', 'opening-rule', pass);
+    put(dir + 'reviews/' + pass + '.json', JSON.stringify({ pass, verdict: 'PASS', summary: 'Reviewed locally.', evidence: [dir + 'proposal.md'], findings: [], waivers: [] }));
+    ok('review', 'opening-rule', pass, '--record', '--author', 'Reviewer');
+  }
+  ok('verify', 'opening-rule', '--record');
+  ok('approve', 'opening-rule', 'final', '--author', 'Writer');
+  ok('apply', 'opening-rule', '--dry-run');
+  ok('apply', 'opening-rule');
+  ok('archive', 'opening-rule');
+  assert.match(ok('status').stdout, /opening-rule: ARCHIVED/);
+  assert.match(run('help', '--lang', 'pt-BR').stdout, /storyspec history <mudança>/);
+});

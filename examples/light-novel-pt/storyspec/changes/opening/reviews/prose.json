@@ -1,0 +1,10 @@
+{
+  "pass": "prose",
+  "verdict": "PASS",
+  "summary": "Um momento visual transforma um segredo em decisão.",
+  "evidence": [
+    "storyspec/changes/opening/proposal.md"
+  ],
+  "findings": [],
+  "waivers": []
+}

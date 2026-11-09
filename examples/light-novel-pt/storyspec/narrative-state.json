@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "scenes": [
+    {
+      "id": "choice",
+      "narrativeOrder": 1,
+      "storyAfter": [],
+      "causedBy": [],
+      "originReason": "Um momento visual transforma um segredo em decisão.",
+      "stateChanges": [],
+      "knowledgeChanges": [],
+      "key": "opening/choice",
+      "origin": "opening"
+    }
+  ]
+}

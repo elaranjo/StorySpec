@@ -1,0 +1,34 @@
+{
+  "formatVersion": 4,
+  "name": "A Ponte",
+  "language": "pt-BR",
+  "profile": "novel",
+  "templates": {
+    "chapter": {
+      "requiredFields": [
+        "POV",
+        "Estado inicial",
+        "Objetivo",
+        "Obstáculo",
+        "Decisão",
+        "Consequência",
+        "Revelações",
+        "Movimento do personagem",
+        "Informações proibidas",
+        "Loops narrativos",
+        "Condição final"
+      ]
+    },
+    "scene": {
+      "requiredFields": [
+        "POV",
+        "Objetivo",
+        "Conflito",
+        "Virada",
+        "Consequência",
+        "Informações permitidas",
+        "Informações proibidas"
+      ]
+    }
+  }
+}

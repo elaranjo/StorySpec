@@ -1,0 +1,18 @@
+{
+  "pass": "dramaturgy",
+  "verdict": "PASS",
+  "summary": "A travessia produz uma perda visível.",
+  "evidence": [
+    "storyspec/changes/opening/proposal.md"
+  ],
+  "findings": [],
+  "waivers": [],
+  "requirementAssessments": [
+    {
+      "domain": "plot",
+      "requirement": "costly-choice",
+      "verdict": "SATISFIED",
+      "rationale": "A travessia produz uma perda visível."
+    }
+  ]
+}

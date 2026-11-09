@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "scenes": [
+    {
+      "id": "choice",
+      "narrativeOrder": 1,
+      "storyAfter": [],
+      "causedBy": [],
+      "originReason": "A visual beat turns a secret into a decision.",
+      "stateChanges": [],
+      "knowledgeChanges": [],
+      "key": "opening/choice",
+      "origin": "opening"
+    }
+  ]
+}

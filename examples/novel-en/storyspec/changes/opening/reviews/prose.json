@@ -1,0 +1,10 @@
+{
+  "pass": "prose",
+  "verdict": "PASS",
+  "summary": "The crossing forces a visible loss.",
+  "evidence": [
+    "storyspec/changes/opening/proposal.md"
+  ],
+  "findings": [],
+  "waivers": []
+}

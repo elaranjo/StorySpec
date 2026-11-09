@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "scenes": [
+    {
+      "id": "choice",
+      "narrativeOrder": 1,
+      "storyAfter": [],
+      "causedBy": [],
+      "originReason": "The crossing forces a visible loss.",
+      "stateChanges": [],
+      "knowledgeChanges": []
+    }
+  ],
+  "coverage": [
+    {
+      "domain": "plot",
+      "requirement": "costly-choice",
+      "status": "realized",
+      "links": [
+        {
+          "scene": "choice",
+          "passage": {
+            "path": "manuscript/opening.md",
+            "hash": "0606ba8c0a36a11f7506070a8948c8ac8d9129b34d115e642f16e096167d2755",
+            "startLine": 3,
+            "endLine": 3
+          }
+        }
+      ]
+    }
+  ],
+  "waivers": []
+}

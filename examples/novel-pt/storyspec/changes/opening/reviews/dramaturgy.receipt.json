@@ -1,0 +1,17 @@
+{
+  "pass": "dramaturgy",
+  "author": "Example Reviewer",
+  "at": "2026-11-09T14:02:18.585Z",
+  "hash": "c9134f338e58ea57b10959502ce321bc6250546ad16d502119a20e775ef32293",
+  "change": "opening",
+  "type": "chapter",
+  "inputs": {
+    "report": "bd1064776e21ddd1d35c382bbe0e80edea4654f51b128d12b062d9842f9f6a23",
+    "evidence": {
+      "storyspec/changes/opening/proposal.md": "fdb45768f39651ddb7a73737dc8c76e960ddd70d21041e2b2bf858d14452e6e1"
+    }
+  },
+  "snapshots": {
+    "storyspec/changes/opening/proposal.md": "storyspec/changes/opening/evidence/sha256/fdb45768f39651ddb7a73737dc8c76e960ddd70d21041e2b2bf858d14452e6e1"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "pass": "prose",
+  "author": "Example Reviewer",
+  "at": "2026-11-09T14:02:18.905Z",
+  "hash": "dd3b71c436ea1770a967f26f9e629fbf6ab7b84ad2a360941dcd16b15769b142",
+  "change": "opening",
+  "type": "chapter",
+  "inputs": {
+    "report": "37f2959c0980e2b72cc3017db1af551552cd757ed10abcc779de16b18ebf4032",
+    "evidence": {
+      "storyspec/changes/opening/proposal.md": "fdb45768f39651ddb7a73737dc8c76e960ddd70d21041e2b2bf858d14452e6e1"
+    }
+  },
+  "snapshots": {
+    "storyspec/changes/opening/proposal.md": "storyspec/changes/opening/evidence/sha256/fdb45768f39651ddb7a73737dc8c76e960ddd70d21041e2b2bf858d14452e6e1"
+  }
+}

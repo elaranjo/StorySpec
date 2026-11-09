@@ -1,0 +1,10 @@
+{
+  "pass": "continuity",
+  "verdict": "PASS",
+  "summary": "A visual beat turns a secret into a decision.",
+  "evidence": [
+    "storyspec/changes/opening/proposal.md"
+  ],
+  "findings": [],
+  "waivers": []
+}

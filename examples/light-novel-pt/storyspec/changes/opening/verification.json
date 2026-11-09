@@ -1,0 +1,22 @@
+{
+  "at": "2026-11-09T14:02:21.751Z",
+  "inputs": {
+    "map": "b51e719d83005e5ba5257aa555b98e8b49d49a7b88fa92e191d2764d50a7d387",
+    "index": null,
+    "manuscript": "d0c947f19ce8464a2cee86b90464347b8ad02c44fff9fafdfe8cfafa76964a26",
+    "deltas": {
+      "storyspec/changes/opening/specs/plot/spec.md": "5e5ee1f58346e427e8837a6d5b6df3a860bfa0211a7c28a6a01bd94df46d1510"
+    }
+  },
+  "report": {
+    "change": "opening",
+    "version": 2,
+    "issues": [],
+    "summary": {
+      "scenes": 1,
+      "requirements": 1,
+      "blockers": 0
+    }
+  },
+  "hash": "1e9909b38eb74abaad9b95714eee869d81de3ac7cfd4a22fb5adace40127b48a"
+}

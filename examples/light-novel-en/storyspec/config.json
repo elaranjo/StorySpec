@@ -1,0 +1,34 @@
+{
+  "formatVersion": 4,
+  "name": "The Lantern",
+  "language": "en",
+  "profile": "light-novel",
+  "templates": {
+    "chapter": {
+      "requiredFields": [
+        "POV",
+        "Initial state",
+        "Goal",
+        "Obstacle",
+        "Decision",
+        "Consequence",
+        "Revelations",
+        "Character change",
+        "Forbidden information",
+        "Narrative threads",
+        "End condition"
+      ]
+    },
+    "scene": {
+      "requiredFields": [
+        "POV",
+        "Goal",
+        "Conflict",
+        "Turn",
+        "Consequence",
+        "Allowed information",
+        "Forbidden information"
+      ]
+    }
+  }
+}

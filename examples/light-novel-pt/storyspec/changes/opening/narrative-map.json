@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "scenes": [
+    {
+      "id": "choice",
+      "narrativeOrder": 1,
+      "storyAfter": [],
+      "causedBy": [],
+      "originReason": "Um momento visual transforma um segredo em decisão.",
+      "stateChanges": [],
+      "knowledgeChanges": []
+    }
+  ],
+  "coverage": [
+    {
+      "domain": "plot",
+      "requirement": "costly-choice",
+      "status": "realized",
+      "links": [
+        {
+          "scene": "choice",
+          "passage": {
+            "path": "manuscript/opening.md",
+            "hash": "471eb1e82941d5a4e30d30184a6cadb216cae8603f6ad8281190c4379f8f4aad",
+            "startLine": 3,
+            "endLine": 3
+          }
+        }
+      ]
+    }
+  ],
+  "waivers": []
+}

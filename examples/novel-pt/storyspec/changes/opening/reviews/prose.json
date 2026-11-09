@@ -1,0 +1,10 @@
+{
+  "pass": "prose",
+  "verdict": "PASS",
+  "summary": "A travessia produz uma perda visível.",
+  "evidence": [
+    "storyspec/changes/opening/proposal.md"
+  ],
+  "findings": [],
+  "waivers": []
+}

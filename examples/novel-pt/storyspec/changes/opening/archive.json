@@ -1,0 +1,31 @@
+{
+  "state": "ARCHIVED",
+  "at": "2026-11-09T14:02:19.263Z",
+  "revision": 1,
+  "change": "opening",
+  "type": "chapter",
+  "artifacts": {
+    "storyspec/changes/opening/change.json": "fd32d74d0b9488d1fdd1e6240ba529d8e4200f7d0b01e600208ed61a32340ef4",
+    "storyspec/changes/opening/chapter-contract.md": "8241fbc814cd88602cb3f765e8d9b41354d84bfa53b865f6a85d5aceec38dc80",
+    "storyspec/changes/opening/claims.json": "52717451535071393f53cfa2141e385baa2b890ddff67bac6584fe61af3e65ec",
+    "storyspec/changes/opening/decisions/final.json": "9032627667fddcf2c04a1ef7cbd6fa3f999537850f0f3a1ea1193382ea3c2482",
+    "storyspec/changes/opening/decisions/manuscript.json": "1e7c2b125596d06282bf704faac13c1abbd9492290079665594133818d0cf908",
+    "storyspec/changes/opening/decisions/plan.json": "47b8926c1a5e0859e9bd709bb2e68605115f7ee15708db9f9658a7a5a16294cb",
+    "storyspec/changes/opening/design.md": "2bdbad0304a1a72c9ce07e6515ba0aa8d7e5acf81e3c3d24554a0c3b2103270b",
+    "storyspec/changes/opening/draft.md": "220df6f83f7ba31b01acab9bc0a80a3ceb55671e9e73493476a31e290fb9bbd3",
+    "storyspec/changes/opening/evidence/sha256/947ef1969a04e1d70d8fafa5882667f868b4144975714b81d8aeb6cfea16c90e": "947ef1969a04e1d70d8fafa5882667f868b4144975714b81d8aeb6cfea16c90e",
+    "storyspec/changes/opening/evidence/sha256/fdb45768f39651ddb7a73737dc8c76e960ddd70d21041e2b2bf858d14452e6e1": "fdb45768f39651ddb7a73737dc8c76e960ddd70d21041e2b2bf858d14452e6e1",
+    "storyspec/changes/opening/narrative-map.json": "d658ce04a2c2e6614deeb3f92c2ae6a6f6c550ce1ed0db90c29e73ae5d336245",
+    "storyspec/changes/opening/proposal.md": "fdb45768f39651ddb7a73737dc8c76e960ddd70d21041e2b2bf858d14452e6e1",
+    "storyspec/changes/opening/reviews/continuity.json": "bb2d70ff655c23dba5a74c21c1c711fe492be50682e50247af474e19291a1049",
+    "storyspec/changes/opening/reviews/continuity.receipt.json": "adf125f5ecf4fde9e3bfaf66871847c3c4390a6746d7198d50819cba1a31fb30",
+    "storyspec/changes/opening/reviews/dramaturgy.json": "bd1064776e21ddd1d35c382bbe0e80edea4654f51b128d12b062d9842f9f6a23",
+    "storyspec/changes/opening/reviews/dramaturgy.receipt.json": "2f09e0b1fd6074f702c05a03b4595aaba4a46d293286e5af3fbb40ef20f6ab40",
+    "storyspec/changes/opening/reviews/prose.json": "37f2959c0980e2b72cc3017db1af551552cd757ed10abcc779de16b18ebf4032",
+    "storyspec/changes/opening/reviews/prose.receipt.json": "e6f6ec04d33b62b13032315825d15091cf82fb884effd81cfafdaa764508f2db",
+    "storyspec/changes/opening/scenes/choice.md": "72ee1768ab15d49e67c34371ec7c9f3f3d59bd01956de885872d75493406be85",
+    "storyspec/changes/opening/specs/plot/spec.md": "3b9b3ddf1f87b7f13b714d5e92a351901051d79afb7269b40034148193ba3f20",
+    "storyspec/changes/opening/tasks.md": "61b1c8140b9cf97956ffd823480542e0926a1167e865664cb5992f4db17c2273",
+    "storyspec/changes/opening/verification.json": "588cabefd717d1de5e237c7eec3d1a4bcfd464c88a4e0b63ca794d4c5546a5be"
+  }
+}

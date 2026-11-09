@@ -1,0 +1,27 @@
+{
+  "stage": "plan",
+  "author": "Example Author",
+  "at": "2026-11-09T14:02:16.403Z",
+  "hash": "0396516e487cc22a5adf1e69852e5f082694ce81eb209377aff0a9a477c966f0",
+  "inputs": {
+    "artifacts": {
+      "storyspec/changes/opening/change.json": "656daef44b8c94e764d08c66f5f0dd4958c13df0f285c688ae5a4f8dc127e30c",
+      "storyspec/changes/opening/chapter-contract.md": "7d3de2a017d850d907e63ebf5fcacc3b3468fc87f9cd3d57e4225345763c7812",
+      "storyspec/changes/opening/claims.json": "52717451535071393f53cfa2141e385baa2b890ddff67bac6584fe61af3e65ec",
+      "storyspec/changes/opening/design.md": "b3b837b52579c948726896c8a7b82f82597bca28c2bf9356e863f5a9142f2b58",
+      "storyspec/changes/opening/proposal.md": "41671a53d2dd1c4dbd79daa37ed30b2528a7253309e61c55e82280657c9f063b",
+      "storyspec/changes/opening/scenes/choice.md": "79d1a4e731d763e519648e68668083eaab1a8802aff806bb68f43282368c1434",
+      "storyspec/changes/opening/specs/plot/spec.md": "2c6505d34d35a1175783976d25f2bc5154a267a91e1fa375bde578fb1bbd0439",
+      "storyspec/schema.json": "0f9d1c4ee1eed04f9c381fb19f2692b6afa85f14a1b1259911a4f24e4718e07d"
+    },
+    "base": {
+      "storyspec/specs/plot/spec.md": null
+    },
+    "sources": {
+      "storyspec/style/guide.md": "a0ca52740096d532d8b9ba58f2c5dc5a91a61f1e77940c4f87b5d7ad4bfbeaa5"
+    }
+  },
+  "snapshots": {
+    "storyspec/style/guide.md": "storyspec/changes/opening/evidence/sha256/a0ca52740096d532d8b9ba58f2c5dc5a91a61f1e77940c4f87b5d7ad4bfbeaa5"
+  }
+}
